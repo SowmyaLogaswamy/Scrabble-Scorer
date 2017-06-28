@@ -11,26 +11,19 @@ public class ScrabbleScorer {
   public Integer calculateScore(String word) {
     Integer score = 0;
     for (char ch: word.toCharArray()) {
-      if ((ch=='a') || (ch=='e') || (ch=='i') || (ch=='o') || (ch=='u') || (ch=='l') || (ch=='n') || (ch=='r') || (ch=='t')) {
+      if ((ch=='a') || (ch=='e') || (ch=='i') || (ch=='o') || (ch=='u') || (ch=='l') || (ch=='n') || (ch=='r') || (ch=='t')|| (ch=='s')) {
         score += 1;
-      }
-      if ((ch=='d') || (ch=='g')) {
-        score +=2;
-      }
-      if ((ch=='b') || (ch=='c') || (ch=='m') || (ch=='p')) {
+      } else if ((ch=='d') || (ch=='g')) {
+          score +=2;
+      } else if ((ch=='b') || (ch=='c') || (ch=='m') || (ch=='p')) {
         score += 3;
-      }
-
-      if ((ch=='f') || (ch=='h') || (ch=='v') || (ch=='w') || (ch=='y')) {
+      } else if ((ch=='f') || (ch=='h') || (ch=='v') || (ch=='w') || (ch=='y')) {
         score += 4;
-      }
-      if (ch=='k') {
+      } else if (ch=='k') {
         score +=5;
-      }
-      if ((ch=='j') || (ch=='x')) {
+      } else if ((ch=='j') || (ch=='x')) {
         score += 8;
-      }
-      if ((ch=='q') || (ch=='z')) {
+      } else  {
         score += 10;
       }
     }
