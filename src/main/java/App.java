@@ -6,7 +6,7 @@ public class App {
       String stringUserInput = myConsole.readLine();
       String stringInputLowercase = stringUserInput.toLowerCase();
 
-      ScrabbleScorer scrabblescore = new ScrabbleScorer(stringInputLowercase);
+      ScrabbleScorer scrabblescore = new ScrabbleScorer();
       Integer intFinalScore = scrabblescore.calculateScore(stringInputLowercase);
       System.out.println("The final score is " + intFinalScore);
     }

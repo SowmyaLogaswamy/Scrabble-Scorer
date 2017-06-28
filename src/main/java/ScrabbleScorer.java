@@ -2,12 +2,12 @@
 //import java.util.List;
 
 public class ScrabbleScorer {
-  public String mWord;
+  //public String mWord;
 
-  public ScrabbleScorer (String word) {
-    mWord = word;
-  }
-  
+  // public ScrabbleScorer (String word) {
+  //   mWord = word;
+  // }
+
   public Integer calculateScore(String word) {
     Integer score = 0;
     for (char ch: word.toCharArray()) {
